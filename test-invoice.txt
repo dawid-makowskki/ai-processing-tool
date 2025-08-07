@@ -1,0 +1,24 @@
+INVOICE
+
+Invoice Number: INV-2024-001
+Date: 2024-01-15
+Due Date: 2024-02-15
+
+Bill To:
+John Doe
+123 Main Street
+Anytown, ST 12345
+
+Items:
+1. Web Development Services - $2,500.00
+2. UI/UX Design - $1,200.00
+3. Project Management - $800.00
+
+Subtotal: $4,500.00
+Tax (8%): $360.00
+Total: $4,860.00
+
+Payment Terms: Net 30
+Please make checks payable to: Tech Solutions Inc.
+
+Thank you for your business!

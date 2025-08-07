@@ -1,0 +1,65 @@
+{
+    "task_name": "AI-Powered Document Processing System (NestJS + LangChain + LLM)",
+    "description": "Design and implement a document processing backend system in Node.js using the NestJS framework. The system will integrate with AI via LangChain and an LLM (e.g., OpenAI) to perform automatic analysis, classification, and information extraction from documents in various formats.",
+    "requirements": {
+      "tech_stack": {
+        "language": "Node.js (TypeScript)",
+        "framework": "NestJS",
+        "ai_integration": "LangChain for LLM interaction"
+      },
+      "document_handling": {
+        "supported_formats": ["PDF", "DOCX", "TXT", "image files (JPG, PNG, etc.)"],
+        "upload": true,
+        "storage": ["integration with AWS S3", "local or cloud-based database (e.g., PostgreSQL, MongoDB)"],
+        "validation": ["file type validation", "basic security checks (e.g., file size, MIME type)"]
+      },
+      "ai_processing": {
+        "text_extraction": true,
+        "metadata_extraction": true,
+        "summary_generation": "using LLM via LangChain",
+        "keyword_extraction": true,
+        "language_detection": true,
+        "sentiment_analysis": true,
+        "document_classification": {
+          "use_llm": true,
+          "custom_rules": true,
+          "confidence_score": true,
+          "category_output": true
+        },
+        "structured_data_extraction": "e.g., from tables and forms"
+      },
+      "search_engine": {
+        "vector_search": true,
+        "embedding_generation": true,
+        "entity_ranking": true
+      }
+    },
+    "tools_suggestions": [
+      "NestJS as the main server-side framework",
+      "LangChain JS/TS version for LLM integration",
+      "OpenAI API (or other LLM providers)",
+      "AWS S3 for file storage",
+      "PostgreSQL or MongoDB for metadata and document tracking",
+      "Document parsing libraries (e.g., pdf-parse, mammoth, textract)",
+      "Vector DBs like Pinecone, Weaviate, or open-source FAISS (via bindings)",
+      "HuggingFace Transformers (via APIs or hosted models) for additional NLP tasks"
+    ],
+    "inputs": {
+      "document_files": ["PDF", "DOCX", "TXT", "images"],
+      "example_input": "e.g., a contract in PDF format or a scanned invoice image"
+    },
+    "outputs": {
+      "summary": "Generated document summary via LLM",
+      "tags": "List of extracted keywords or topics",
+      "classification": {
+        "category": "e.g., invoice, contract, report",
+        "confidence": "e.g., 0.92"
+      },
+      "metadata": {
+        "language": "e.g., en, pl",
+        "extracted_fields": "e.g., tax ID, amount, date"
+      },
+      "search_results": "List of relevant documents based on a semantic query"
+    },
+    "notes": "Start with an MVP: implement upload, text extraction, and summarization. Then incrementally add classification, tagging, embeddings, and semantic search. All services must be implemented using NestJS modules and services architecture."
+  }
