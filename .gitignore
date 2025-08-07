@@ -207,7 +207,6 @@ Thumbs.db
 .dockerignore
 
 # AWS
-awscliv2.zip
 .aws/
 
 # Database

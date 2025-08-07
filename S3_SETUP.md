@@ -5,7 +5,6 @@ This guide will help you configure AWS S3 for the AI Document Processing System.
 ## Prerequisites
 
 - AWS Account
-- AWS CLI installed (optional, but recommended)
 - Basic knowledge of AWS IAM and S3
 
 ## Step 1: Create S3 Bucket
@@ -27,7 +26,7 @@ This guide will help you configure AWS S3 for the AI Document Processing System.
    - Enable versioning (recommended)
    - Configure lifecycle rules (optional)
 
-### Option B: Using AWS CLI
+### Option B: Using AWS CLI (if installed separately)
 
 ```bash
 # Create bucket
@@ -122,7 +121,7 @@ nano .env
 
 ## Step 5: Test S3 Configuration
 
-### Option A: Using AWS CLI
+### Option A: Using AWS CLI (if installed separately)
 
 ```bash
 # Test bucket access

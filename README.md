@@ -65,7 +65,7 @@ A comprehensive document processing backend system built with NestJS, LangChain,
 
 3. **Configure S3 (Optional but Recommended)**
 
-   **Quick Setup (if you have AWS CLI):**
+   **Quick Setup (if you have AWS CLI installed separately):**
    ```bash
    ./s3-setup.sh
    ```
